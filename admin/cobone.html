@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="asstesClient/imag/M-.png">
+    <!--  Bootstrap v4.6.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="asstesClient/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf">
+    <link rel="stylesheet" href="asstesClient/fonts/centric-space-centric-space-svg-400.otf">
+
+    <!--  font Awesome -->
+    <link href="asstesClient/fonts/all.min.css" rel="stylesheet">
+
+    <!--  Style css -->
+    <link href="asstesClient/css/shared.css" rel="stylesheet">
+    <link href="asstesClient/css/cobon.css" rel="stylesheet">
+
+    <title>Beauty</title>
+
+</head>
+
+<body dir="rtl">
+
+
+    <!--=============== LOADING ===============-->
+    <section id="loadingOverlay" class="loading-up">
+        <div class='loader loader1'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <div class="row m-0 p-0">
+
+        <!--=============== SIDEBAR ===============-->
+        <aside class="sidebar col" id="sidebar">
+            <div class="sidebar-container flex-wrap">
+                <button class="logo text-start d-lg-none mx-2 btnSlider">
+                    <span class="toggle-sidebar"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                </button>
+                <div class="logo d-flex align-items-center flex-column mt-3">
+                    <img src="asstesClient/imag/hady.jpg" alt="" class="sidebar__logo-text">
+                    <span>هادى ربيع</span>
+                </div>
+                <hr class="bg-light">
+
+                <div class="sidebar-content">
+                    <div class="accordion accordion-flush my-2 " id="dashbord">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                            <i class="fa-solid fa-chart-column fa-xl"></i> <span class="mx-3">وحدة التحكم </span>
+                        </button>
+                        <ul id="flush-collapseOne" class="accordion-collapse collapse my-2 "
+                            aria-labelledby="flush-headingOne" data-bs-parent="#headingOne">
+                            <li>
+                                <a href="dashbord.html">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span class="mx-3">لوحة التحكم </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion accordion-flush my-2 " id="pages">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-pages" aria-expanded="false" aria-controls="flush-pages">
+                            <i class="fa-solid fa-file-lines fa-xl"></i> <span class="mx-3"> الصفحات </span>
+                        </button>
+                        <ul id="flush-pages" class="accordion-collapse collapse my-2 show" aria-labelledby="flush-pages"
+                            data-bs-parent="#pages">
+                            <li>
+                                <a href="home.html" class=""> <i class="fa-regular fa-circle"></i> <span> الواجهة
+                                    الرئيسية </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="create-item.html" class=""> <i class="fa-regular fa-circle"></i> <span> انشاء
+                                    المنتجات </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="create-packge.html" class=""> <i class="fa-regular fa-circle"></i> <span> انشاء
+                                    الباقات </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about-us.html" class=""> <i class="fa-regular fa-circle"></i> <span> بيانات
+                                    التواصل </span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="cobone.html" class=""> <i class="fa-regular fa-circle"></i> <span> كوبونات
+                                    الخصم </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush my-2 " id="orders">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-orders" aria-expanded="false" aria-controls="flush-orders">
+                            <i class="fa-solid fa-timeline fa-xl"></i> <span class="mx-3"> متابعه الطلبات </span>
+                        </button>
+                        <ul id="flush-orders" class="accordion-collapse collapse my-2 " aria-labelledby="flush-orders"
+                            data-bs-parent="#orders">
+                            <li>
+                                <a href="follow-item.html" class=""> <i class="fa-regular fa-circle"></i> <span> متابعه
+                                        المنتجات </span></a>
+                            </li>
+                            <li>
+                                <a href="follow-packge.html" class=""> <i class="fa-regular fa-circle"></i> <span>
+                                        متابعه الحجوزات </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush my-2 " id="client">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-client" aria-expanded="false" aria-controls="flush-client">
+                            <i class="fa-solid fa-users fa-xl"></i> <span class="mx-3"> العملاء </span>
+                        </button>
+                        <ul id="flush-client" class="accordion-collapse collapse my-2 " aria-labelledby="flush-client"
+                            data-bs-parent="#client">
+                            <li>
+                                <a href="client.html" class=""> <i class="fa-regular fa-circle"></i> <span> عملاء
+                                    </span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+        <!-- End -->
+
+
+        <div class="col p-0 m-0">
+            <!--=============== NAVBAR ===============-->
+            <nav id="navbar">
+                <div class="row w-100 m-0 position-relative">
+                    <div class="rowNav">
+                        <!-- icons -->
+                        <div class="iconsnav">
+                            <!-- menu -->
+                            <button class="btnSlider icon toggle-sidebar mx-3 ml-4 p-0">
+                                <img src="./asstesClient/imag/menu.png" alt="">
+                            </button>
+                            <!-- notifaction -->
+                            <button class="notification-ui_icon icon mx-3" id="notification-button">
+                                <i class="fa-regular fa-bell fa-lg"></i>
+                                <span class="unread-notification">51</span>
+                            </button>
+
+                            <!-- </div> -->
+                            <!-- toogle Sign in Sign up -->
+                            <!-- <a class="signIn" href="login.html">تسجيل</a>
+                            <a class="signUp mx-3" href="login.html">انشاء حساب</a> -->
+                        </div>
+                        <!-- logo -->
+                        <a href="index.html" class="logo">
+                            <img src="asstesClient/imag/Masar.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="dropdown-menu notification-ui_dd" id="notification-modal">
+                        <div class="notification-ui_dd-header">
+                            <h4 class="text-center">اشعارات</h4>
+                        </div>
+                        <div class="notification-ui_dd-content">
+                            <div class="notification-list notification-list--unread">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/zYxDCQT.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list notification-list--unread">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/w4Mp4ny.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/ltXdE4K.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="notification-ui_dd-footer">
+                            <a href="#" class="btn btn-gold  justify-content-center btn-block w-100">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End  -->
+
+            <!--=============== HEADER ===============-->
+            <header>
+                <div class="row w-100 m-0 ">
+                    <div class="d-flex col-12 justify-content-between py-3">
+                        <h4 class="text-color"> انشاء كوبونات الخصم </h4>
+                        <div class="d-flex text-p">
+                            <a href="#"> انشاء كوبونات الخصم </a>
+                            <span class="px-2"> / </span>
+                            <a href="../index.html">الرئيسية</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="row w-100 m-0 bg-component">
+                    <div class="col-lg-3 col-12 ">
+                        <div class="card-body search my-3">
+                            <input class="form-control" type="text" placeholder="انشاء كوبون الخصم">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 ">
+                        <div class="card-body search my-3">
+                            <input class="form-control w-auto" type="date">
+                            <lable>تاريخ الانهاء</lable>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 ">
+                        <div class="card-body search my-3">
+                            <input class="form-control w-auto" type="date">
+                            <lable>تاريخ التفعيل</lable>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 ">
+                        <div class="my-3">
+                            <button class="btn-gold w-100">
+                                <span class="py-2 m-auto">انشاء</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div class="row w-100 m-0">
+                    <div class="d-flex col-12 justify-content-between py-3">
+                        <h4 class="card-title text-color"> عرض جميع الكوبونات</h4>
+                    </div>
+                </div>
+                <div class="row w-100 m-0 bg-component">
+                    <div class="col-lg-12">    
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>كود الخصم</th>
+                                            <th>الوقت المتبقى </th>
+                                            <th>عدد الاستخدام </th>
+                                            <th>الحالة </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">#%^$31561</td>
+                                            <td>4 ايام</td>
+                                            <td>3</td>
+                                            <td>
+                                                <select aria-label="Default select example">
+                                                    <option selected> قيد التشغيل </option>
+                                                    <option value="1" class="text-danger">الغاء التشغيل</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">#%^$31561</td>
+                                            <td>4 ايام</td>
+                                            <td>5</td>
+                                            <td>
+                                                <select aria-label="Default select example">
+                                                    <option selected> قيد التشغيل </option>
+                                                    <option value="1" class="text-danger">الغاء التشغيل</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">#%^$31561</td>
+                                            <td>4 ايام</td>
+                                            <td>1</td>
+                                            <td>
+                                                <select aria-label="Default select example">
+                                                    <option selected> قيد التشغيل </option>
+                                                    <option value="1" class="text-danger">الغاء التشغيل</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end -->
+        </div>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="asstesClient/apexcharts.min.js"></script>
+    <script src="asstesClient/apexcharts-column.init.js"></script>
+    <script src="asstesClient/dashboard-sales.init.js"></script>
+
+
+
+    <!--  font awesome -->
+    <script src="asstesClient/fonts/all.min.js"></script>
+
+
+    <!-- Js Index Java Script -->
+    <script src="asstesClient/js/shared.js"></script>
+
+    <script>
+        // upload img
+        $(document).ready(function () {
+            $('#imageInput').on('change', function () {
+                var input = this;
+                var img = $('#selectedImage');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+        // img 2
+        $(document).ready(function () {
+            $('#imageInput2').on('change', function () {
+                var input = this;
+                var img = $('#editImage');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+    </script>
+    <script>
+        // ======================= Live typing text =============================
+        $(document).ready(function () {
+            $("#live-nameProduct").on("input", function () {
+                var ProductValue = $(this).val();
+                $("#d-nameProduct").text(ProductValue);
+            });
+            $("#live-price").on("input", function () {
+                var priceValue = $(this).val();
+                $("#d-price").text(priceValue + "$");
+            });
+            $("#live-Discount").on("input", function () {
+                var DiscountValue = $(this).val();
+                $("#d-Discount").text("(% " + DiscountValue + " )");
+            });
+            $("#live-Description").on("input", function () {
+                var descriptioneValue = $(this).val();
+                $("#d-Description").text(descriptioneValue);
+            });
+        });
+    </script>
+    <script>
+        // Discount
+        $(document).ready(function () {
+            var productNumberField = $("#live-price");
+            var discountPercentageField = $("#live-Discount");
+            var discountedValueSpan = $("#discountedValue");
+
+            var getValue = function (field) {
+                return parseFloat(field.val()) || 0;
+            };
+
+            var calculateDiscountedValue = function () {
+                var productNumber = getValue(productNumberField);
+                var discountPercentage = getValue(discountPercentageField);
+                var discountedValue = productNumber - (productNumber * (discountPercentage / 100));
+                discountedValueSpan.text(discountedValue.toFixed(2));
+            };
+
+            productNumberField.add(discountPercentageField).on("input", calculateDiscountedValue);
+
+            calculateDiscountedValue();
+        });
+    </script>
+    <script>
+        // category
+         $(document).ready(function () {
+        $(".btnItem").on("click", function () {
+            var filter = $(this).data("filter");
+
+            if (filter === "all") {
+                $(".column").addClass("showItem");
+            } else {
+                $(".column").removeClass("showItem").filter("." + filter).addClass("showItem");
+            }
+
+            $(this).addClass("activeItem").siblings().removeClass("activeItem");
+        });
+    });
+    </script>
+    <script>
+        $('#searchInput').on('input', function () {
+            var searchTerm = $(this).val().trim().toLowerCase();
+
+            $('#items .column').each(function () {
+                var cardText = $(this).text().toLowerCase();
+                if (cardText.includes(searchTerm)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

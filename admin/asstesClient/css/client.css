@@ -1,0 +1,186 @@
+/*----------------------------------------
+Project:	beauty
+
+Devloper:	Hady Rabie - Mohamed Salah
+----------------------------------------*/
+/*----------------------------------------
+[Table of contents]
+
+1. items
+
+/*==============================
+ 	Start client
+ ==============================*/
+ header{
+    height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 7px 0 0;
+}
+ .client .card{
+    position: relative;
+    height: 330px;
+    min-width: 200px;
+    width: 100%;
+    background: var(--cards);
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color);
+    transition: all .5s ease;
+}
+.client-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 10px solid var(--background);
+}
+.client-img img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.line-time{
+    position: absolute;
+    top: 25px;
+    left: -38px;
+    background: var(--btn-gold);
+    height: 35px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEE;
+    border: 4px solid #0b0c10;
+    transform: rotate(315deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.square-up{
+    position: absolute;
+    top: -15px;
+    right: -14px;
+    border: 3px solid #9e730b;
+    box-shadow: 4px 4px 13px #b3924257;
+    height: 80px;
+    width: 60px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.square-down{
+    position: absolute;
+    bottom: -15px;
+    left: -14px;
+    border: 3px solid #9e730b;
+    box-shadow: 4px 4px 13px #b3924257;
+    height: 80px;
+    width: 60px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.client .card ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--p);
+    margin-top: 10px;
+    font-size: 15px;
+}
+.client li span{
+    display: inline-block;
+    width: 25px;
+    height: 13px;
+    text-align: center;
+}
+/* hover */
+.cover-black{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00000079;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.btn-hover{
+    background: #a099994b;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.card:hover .square-down ,.card:hover .square-up {
+    height: 358px;
+    width: 60px;
+    z-index: -2;
+}
+.card:hover .cover-black {
+    opacity: 1;
+    visibility: inherit;
+}
+/*==============================
+ 	End client
+ ==============================*/
+
+/*==============================
+	Responsive
+==============================*/
+@media (max-width: 1390px) {
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    .client-img {
+        height: 120px;
+        width: 120px;
+    }
+    .client .card ul{
+        font-size: 13px;
+    }
+}
+@media (max-width: 910px) {
+    /* header */
+    .text-header h1{
+        font-size: 35px;
+    }
+}
+@media (max-width: 740px) {
+    .box-category{
+        display: flex;
+        flex-direction: column;
+      }
+    .category {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .category button ,.category input{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 670px) {
+ 
+}
+@media (max-width: 400px) {
+	h4, h3{
+		font-size: 18px;
+	}
+	a{
+		font-size: 14px;
+	}
+	span{
+		font-size: 14px;
+	}
+}
+
+/*==============================
+	End Responsive
+==============================*/  

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="asstesClient/imag/M-.png">
+    <!--  Bootstrap v4.6.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="asstesClient/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf">
+    <link rel="stylesheet" href="asstesClient/fonts/centric-space-centric-space-svg-400.otf">
+
+    <!--  font Awesome -->
+    <link href="asstesClient/fonts/all.min.css" rel="stylesheet">
+
+    <!--  Style css -->
+    <link href="asstesClient/css/shared.css" rel="stylesheet">
+    <link href="asstesClient/Chart.css" rel="stylesheet">
+    <link href="asstesClient/css/createpackge.css" rel="stylesheet">
+
+    <title>Beauty</title>
+
+</head>
+
+<body dir="rtl">
+
+
+    <!--=============== LOADING ===============-->
+    <section id="loadingOverlay" class="loading-up">
+        <div class='loader loader1'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <div class="row m-0 p-0">
+
+        <!--=============== SIDEBAR ===============-->
+        <aside class="sidebar col" id="sidebar">
+            <div class="sidebar-container flex-wrap">
+                <button class="logo text-start d-lg-none mx-2 btnSlider">
+                    <span class="toggle-sidebar"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                </button>
+                <div class="logo d-flex align-items-center flex-column mt-3">
+                    <img src="asstesClient/imag/hady.jpg" alt="" class="sidebar__logo-text">
+                    <span>هادى ربيع</span>
+                </div>
+                <hr class="bg-light">
+
+                <div class="sidebar-content">
+                    <div class="accordion accordion-flush my-2 " id="dashbord">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                            <i class="fa-solid fa-chart-column fa-xl"></i> <span class="mx-3">وحدة التحكم </span>
+                        </button>
+                        <ul id="flush-collapseOne" class="accordion-collapse collapse my-2 "
+                            aria-labelledby="flush-headingOne" data-bs-parent="#headingOne">
+                            <li>
+                                <a href="dashbord.html">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span class="mx-3">لوحة التحكم </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="accordion accordion-flush my-2 " id="pages">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-pages" aria-expanded="false" aria-controls="flush-pages">
+                            <i class="fa-solid fa-file-lines fa-xl"></i> <span class="mx-3"> الصفحات </span>
+                        </button>
+                        <ul id="flush-pages" class="accordion-collapse collapse my-2 show" aria-labelledby="flush-pages"
+                            data-bs-parent="#pages">
+                            <li>
+                                <a href="home.html" class=""> <i class="fa-regular fa-circle"></i> <span> الواجهة
+                                        الرئيسية </span></a>
+                            </li>
+                            <li>
+                                <a href="create-item.html" class=""> <i class="fa-regular fa-circle"></i> <span> انشاء
+                                        المنتجات </span></a>
+                            </li>
+                            <li class="active">
+                                <a href="create-packge.html" class=""> <i class="fa-regular fa-circle"></i> <span> انشاء
+                                        الباقات </span></a>
+                            </li>
+                            <li>
+                                <a href="about-us.html" class=""> <i class="fa-regular fa-circle"></i> <span> بيانات
+                                        التواصل </span></a>
+                            </li>
+                            <li>
+                                <a href="cobone.html" class=""> <i class="fa-regular fa-circle"></i> <span> كوبونات
+                                        الخصم </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush my-2 " id="orders">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-orders" aria-expanded="false" aria-controls="flush-orders">
+                            <i class="fa-solid fa-timeline fa-xl"></i> <span class="mx-3"> متابعه الطلبات </span>
+                        </button>
+                        <ul id="flush-orders" class="accordion-collapse collapse my-2 " aria-labelledby="flush-orders"
+                            data-bs-parent="#orders">
+                            <li>
+                                <a href="follow-item.html" class=""> <i class="fa-regular fa-circle"></i> <span> متابعه
+                                        المنتجات </span></a>
+                            </li>
+                            <li>
+                                <a href="follow-packge.html" class=""> <i class="fa-regular fa-circle"></i> <span>
+                                        متابعه الحجوزات </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush my-2 " id="client">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-client" aria-expanded="false" aria-controls="flush-client">
+                            <i class="fa-solid fa-users fa-xl"></i> <span class="mx-3"> العملاء </span>
+                        </button>
+                        <ul id="flush-client" class="accordion-collapse collapse my-2 " aria-labelledby="flush-client"
+                            data-bs-parent="#client">
+                            <li>
+                                <a href="client.html" class=""> <i class="fa-regular fa-circle"></i> <span> عملاء
+                                    </span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+        <!-- End -->
+
+
+        <div class="col p-0 m-0">
+            <!--=============== NAVBAR ===============-->
+            <nav id="navbar">
+                <div class="row w-100 m-0 position-relative">
+                    <div class="rowNav">
+                        <!-- icons -->
+                        <div class="iconsnav">
+                            <!-- menu -->
+                            <button class="btnSlider icon toggle-sidebar mx-3 ml-4 p-0">
+                                <img src="./asstesClient/imag/menu.png" alt="">
+                            </button>
+                            <!-- notifaction -->
+                            <button class="notification-ui_icon icon mx-3" id="notification-button">
+                                <i class="fa-regular fa-bell fa-lg"></i>
+                                <span class="unread-notification">51</span>
+                            </button>
+
+                            <!-- </div> -->
+                            <!-- toogle Sign in Sign up -->
+                            <!-- <a class="signIn" href="login.html">تسجيل</a>
+                            <a class="signUp mx-3" href="login.html">انشاء حساب</a> -->
+                        </div>
+                        <!-- logo -->
+                        <a href="index.html" class="logo">
+                            <img src="asstesClient/imag/Masar.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="dropdown-menu notification-ui_dd" id="notification-modal">
+                        <div class="notification-ui_dd-header">
+                            <h4 class="text-center">اشعارات</h4>
+                        </div>
+                        <div class="notification-ui_dd-content">
+                            <div class="notification-list notification-list--unread">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/zYxDCQT.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list notification-list--unread">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/w4Mp4ny.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/ltXdE4K.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                            <div class="notification-list">
+                                <div class="notification-list_img">
+                                    <img src="https://i.imgur.com/CtAQDCP.jpg" alt="user">
+                                </div>
+                                <div class="notification-list_detail">
+                                    <p class="text-color3"><b>هادى ربيع</b> لديك كود خصم</p>
+                                    <p class="text-p"><small>منذ 10 دقائق</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-ui_dd-footer">
+                            <a href="#" class="btn btn-gold  justify-content-center btn-block w-100">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End  -->
+
+            <!--=============== HEADER ===============-->
+            <header>
+                <div class="row w-100 m-0">
+                    <div class="d-flex col-12 justify-content-between py-3">
+                        <h4 class="text-color"> انشاء الباقات </h4>
+                        <div class="d-flex text-p">
+                            <a href="#"> انشاء الباقات </a>
+                            <span class="px-2"> / </span>
+                            <a href="../index.html">الرئيسية</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100 m-0">
+                    <div class="col-lg-8 col-12 p-2">
+                        <div class="row bg-component">
+                            <div class="col-lg-6 card-body">
+                                <input id="live-namePackge" class="form-control my-4" type="text" placeholder="اسم الباقة">
+                                <input id="live-price" class="form-control my-4" type="number" min="0" placeholder="سعر الباقة ">
+                                <input id="live-duration" class="form-control my-4" type="number" placeholder=" المده بالساعات">
+                            </div>
+                            <div class="col-lg-6 card-body">
+                                <input id="live-item1" class="form-control mb-2 mt-4" type="text" placeholder="منتج 1">
+                                <input id="live-item2" class="form-control my-2" type="text" placeholder="منتج 2">
+                                <input id="live-item3" class="form-control my-2" type="text" placeholder="منتج 3">
+                                <input id="live-item4" class="form-control my-2" type="text" placeholder="منتج 4">
+                                <input id="live-item5" class="form-control my-2" type="text" placeholder="منتج 5">
+                                <input id="live-item6" class="form-control my-2" type="text" placeholder="منتج 6">
+                                <input id="live-item7" class="form-control my-2" type="text" placeholder="منتج 7">
+                                <input id="live-item8" class="form-control my-2" type="text" placeholder="منتج 8">
+                                <input id="live-item9" class="form-control my-2" type="text" placeholder="منتج 9">
+                                <input id="live-item10" class="form-control my-2" type="text" placeholder="منتج 10">
+                            </div>
+                            <div class="col-12 ">
+                                <button class="btn-gold mb-3">
+                                    <span class="py-2 m-auto">ارسال</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="packge col d-none-990 d-lg-flex">
+                        <div style="padding: 15px;" class="w-100">
+                            <section class="card">
+                                <span class="square-up"></span>
+                                <span class="square-down"></span>
+                                <div class="line-time" id="d-duration">
+                                    عدد الساعات
+                                </div>
+                                <div>
+                                    <h4  id="d-namePackge">اسم الباقة</h4>
+                                    <h1 id="d-price">0000$</h1>
+                                    <ul>
+    
+                                        <li class="d-flex">
+                                            <span id="d-item1">منتج 1</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item2">منتج 2</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item3">منتج 3</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item4">منتج 4</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item5">منتج 5</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item6">منتج 6</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item7">منتج 7</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item8">منتج 8</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item9">منتج 9</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <span id="d-item10">منتج 10</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100 m-0">
+                    <div class="col box px-0">
+                        <div class="card-body m-2 px-0">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="card-title text-color"> تعديل الباقات</h4>
+                            </div>
+                            
+                            <div id="items" class="row packge my-2">
+                                <div class=" col-lg-3 col-md-4 col-sm-6 category1">
+                                    <div style="padding: 15px;">
+                                        <section class="card">
+                                            <span class="square-up"></span>
+                                            <span class="square-down"></span>
+                                            <div class="line-time">
+                                                4 ساعات
+                                            </div>
+                                            <div>
+                                                <h4>اساسية</h4>
+                                                <h1>2000$</h1>
+                                                <ul>
+
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                    <li><span></span> زيوت طبيعية</li>
+                                                    <li><span></span> احجار سوداء</li>
+                                                    <li><span></span> اعشاب طبيعية</li>
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                </ul>
+                                            </div>
+                                            <div class="box-button d-flex justify-content-between">
+                                                <button class="btn-danger w-75 mb-3">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                                <span class="mx-2"></span>
+                                                
+                                                <button class="btn-success w-75 mb-3" data-bs-toggle="modal" data-bs-target="#editPackge">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-md-4 col-sm-6 category1">
+                                    <div style="padding: 15px;">
+                                        <section class="card">
+                                            <span class="square-up"></span>
+                                            <span class="square-down"></span>
+                                            <div class="line-time">
+                                                4 ساعات
+                                            </div>
+                                            <div>
+                                                <h4>اساسية</h4>
+                                                <h1>2000$</h1>
+                                                <ul>
+                
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                    <li><span></span> زيوت طبيعية</li>
+                                                    <li><span></span> احجار سوداء</li>
+                                                    <li><span></span> اعشاب طبيعية</li>
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                </ul>
+                                            </div>
+                                            <div class="box-button d-flex justify-content-between">
+                                                <button class="btn-danger w-75 mb-3">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                                <span class="mx-2"></span>
+                                                
+                                                <button class="btn-success w-75 mb-3" data-bs-toggle="modal" data-bs-target="#editPackge">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-md-4 col-sm-6 category2">
+                                    <div style="padding: 15px;">
+                                        <section class="card">
+                                            <span class="square-up"></span>
+                                            <span class="square-down"></span>
+                                            <div class="line-time">
+                                                4 ساعات
+                                            </div>
+                                            <div>
+                                                <h4>اساسية</h4>
+                                                <h1>2000$</h1>
+                                                <ul>
+                
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                    <li><span></span> زيوت طبيعية</li>
+                                                    <li><span></span> احجار سوداء</li>
+                                                    <li><span></span> اعشاب طبيعية</li>
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                </ul>
+                                            </div>
+                                            <div class="box-button d-flex justify-content-between">
+                                                <button class="btn-danger w-75 mb-3">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                                <span class="mx-2"></span>
+                                                
+                                                <button class="btn-success w-75 mb-3" data-bs-toggle="modal" data-bs-target="#editPackge">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-md-4 col-sm-6 category3">
+                                    <div style="padding: 15px;">
+                                        <section class="card">
+                                            <span class="square-up"></span>
+                                            <span class="square-down"></span>
+                                            <div class="line-time">
+                                                4 ساعات
+                                            </div>
+                                            <div>
+                                                <h4>اساسية</h4>
+                                                <h1>2000$</h1>
+                                                <ul>
+                
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                    <li><span></span> زيوت طبيعية</li>
+                                                    <li><span></span> احجار سوداء</li>
+                                                    <li><span></span> اعشاب طبيعية</li>
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                </ul>
+                                            </div>
+                                            <div class="box-button d-flex justify-content-between">
+                                                <button class="btn-danger w-75 mb-3">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                                <span class="mx-2"></span>
+                                                
+                                                <button class="btn-success w-75 mb-3" data-bs-toggle="modal" data-bs-target="#editPackge">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-md-4 col-sm-6 category4">
+                                    <div style="padding: 15px;">
+                                        <section class="card">
+                                            <span class="square-up"></span>
+                                            <span class="square-down"></span>
+                                            <div class="line-time">
+                                                4 ساعات
+                                            </div>
+                                            <div>
+                                                <h4>اساسية</h4>
+                                                <h1>2000$</h1>
+                                                <ul>
+                
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                    <li><span></span> زيوت طبيعية</li>
+                                                    <li><span></span> احجار سوداء</li>
+                                                    <li><span></span> اعشاب طبيعية</li>
+                                                    <li><span></span> جلسات تخسيس</li>
+                                                    <li><span></span> علاج بالاعشاب</li>
+                                                </ul>
+                                            </div>
+                                            <div class="box-button d-flex justify-content-between">
+                                                <button class="btn-danger w-75 mb-3">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                                <span class="mx-2"></span>
+                                                
+                                                <button class="btn-success w-75 mb-3" data-bs-toggle="modal" data-bs-target="#editPackge">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end -->
+        </div>
+    </div>
+
+
+    <!-- popup packge -->
+    <div class="modal fade" id="editPackge" tabindex="-1" aria-labelledby="editPackge">
+        <div class="modal-dialog">
+            <form class="alert-support modal-content bg-component p-4">
+                <div class="head-alert d-flex justify-content-between align-items-center">
+                    <h5 class="text-color">تعديل الباقة <i class="fa-solid fa-pen fa-sm mx-3"></i></h5>
+                    <button class="text-color btn-close-support" data-bs-dismiss="modal">
+                        <i class="text-color fa-solid fa-close fa-lg"></i>
+                    </button>
+                </div>
+                <input class="form-control my-2" type="text" placeholder="اسم الباقة">
+                <input class="form-control my-2" type="number" min="0" placeholder="سعر الباقة ">
+                <input class="form-control my-2" type="number" placeholder=" المده بالساعات">
+                <input class="form-control my-2" type="text" placeholder="منتج 1">
+                <input class="form-control my-2" type="text" placeholder="منتج 2">
+                <input class="form-control my-2" type="text" placeholder="منتج 3">
+                <input class="form-control my-2" type="text" placeholder="منتج 4">
+                <input class="form-control my-2" type="text" placeholder="منتج 5">
+                <input class="form-control my-2" type="text" placeholder="منتج 6">
+                <input class="form-control my-2" type="text" placeholder="منتج 7">
+                <input class="form-control my-2" type="text" placeholder="منتج 8">
+                <input class="form-control my-2" type="text" placeholder="منتج 9">
+                <input class="form-control my-2" type="text" placeholder="منتج 10">
+                <button class="btn-gold w-100 my-4">
+                    <span class="py-2 m-auto">ارسال</span>
+                </button>
+            </form>
+        </div>
+    </div> 
+    <!-- End  -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="asstesClient/apexcharts.min.js"></script>
+    <script src="asstesClient/apexcharts-column.init.js"></script>
+    <script src="asstesClient/dashboard-sales.init.js"></script>
+
+
+
+    <!--  font awesome -->
+    <script src="asstesClient/fonts/all.min.js"></script>
+
+
+    <!-- Js Index Java Script -->
+    <script src="asstesClient/js/shared.js"></script>
+
+    <script>
+        // upload img
+        $(document).ready(function () {
+            $('#imageInput').on('change', function () {
+                var input = this;
+                var img = $('#selectedImage');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+        // img 2
+        $(document).ready(function () {
+            $('#imageInput2').on('change', function () {
+                var input = this;
+                var img = $('#editImage');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+    </script>
+    <script>
+        // ======================= Live typing text =============================
+        $(document).ready(function () {
+            $("#live-namePackge").on("input", function () {
+                var ProductValue = $(this).val();
+                $("#d-namePackge").text(ProductValue);
+            });
+            $("#live-price").on("input", function () {
+                var priceValue = $(this).val();
+                $("#d-price").text(priceValue + "$");
+            });
+            $("#live-duration").on("input", function () {
+                var durationValue = $(this).val();
+                $("#d-duration").text( durationValue + " ساعات ");
+            });
+            
+            $("#live-item1").on("input", function () {
+                var item1Value = $(this).val();
+                $("#d-item1").text(item1Value);
+            });
+            $("#live-item2").on("input", function () {
+                var item2Value = $(this).val();
+                $("#d-item2").text(item2Value);
+            });
+            $("#live-item3").on("input", function () {
+                var item3Value = $(this).val();
+                $("#d-item3").text(item3Value);
+            });
+            $("#live-item4").on("input", function () {
+                var item4Value = $(this).val();
+                $("#d-item4").text(item4Value);
+            });
+            $("#live-item5").on("input", function () {
+                var item5Value = $(this).val();
+                $("#d-item5").text(item5Value);
+            });
+            $("#live-item6").on("input", function () {
+                var item6Value = $(this).val();
+                $("#d-item6").text(item6Value);
+            });
+            $("#live-item7").on("input", function () {
+                var item7Value = $(this).val();
+                $("#d-item7").text(item7Value);
+            });
+            $("#live-item8").on("input", function () {
+                var item8Value = $(this).val();
+                $("#d-item8").text(item8Value);
+            });
+            $("#live-item9").on("input", function () {
+                var item9Value = $(this).val();
+                $("#d-item9").text(item9Value);
+            });
+            $("#live-item10").on("input", function () {
+                var item10Value = $(this).val();
+                $("#d-item10").text(item10Value);
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

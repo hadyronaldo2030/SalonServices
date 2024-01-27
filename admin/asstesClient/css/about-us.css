@@ -1,0 +1,344 @@
+/*----------------------------------------
+Project:	beauty
+
+Devloper:	Hady Rabie - Mohamed Salah
+----------------------------------------*/
+/*----------------------------------------
+[Table of contents]
+
+1. create home
+
+
+/*==============================
+	start create home
+==============================*/
+header{
+    height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 15px 0 9px;
+}
+.card-img-top{
+	max-height: 300px;
+	object-fit: cover;
+}
+.packge li span::before{
+    content: "";
+    background: url('../imag/check.svg') center/cover no-repeat;
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    margin-left: 5px;
+}
+/*==============================
+	end create home
+==============================*/
+
+
+/*==============================
+ 	Start About
+ ==============================*/
+ .ext-about-wrapper{
+    margin: 100px 0;
+}
+.ext-about-img {
+    position: relative;
+    text-align: left;
+}
+
+.ext-about-img img {
+    position: relative;
+    z-index: 1;
+}
+
+.ext-about-img-small {
+    position: relative;
+    float: right;
+    margin-top: -250px;
+    padding: 50px 0 0 50px;
+}
+
+.ext-about-img-small:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background: transparent;
+    border: 5px solid var(--color2);
+    z-index: 0;
+}
+
+.ext-about-img-inner>img {
+    width: calc(100% - 15%);
+    float: left;
+    min-height: 290px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.ext-about-img-small img {
+    width: calc(75% - 15%);
+    bottom: -70px;
+    left: 70px;
+    min-height: 250px;
+    max-height: 230px;
+    object-fit: cover;
+}
+
+.video-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    z-index: 2;
+    background: #EEE;
+}
+
+.video-icon a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: var(--ext-white);
+    border-radius: 50px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    color: #f00;
+    font-size: 40px;
+}
+
+.btn-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    background: #ffffff;
+}
+
+.btn-wave {
+    -webkit-animation: sonarWave 1.5s linear infinite;
+    animation: sonarWave 1.5s linear infinite;
+}
+
+@-webkit-keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+.ext-heading-wrapper h4::after, .ext-heading-wrapper h4::before{
+    background: #B59548;
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.ext-listing ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ext-listing ul li {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: var(--p);
+}
+
+.ext-listing ul li span {
+    background: url('../imag/check.svg') center/cover no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.ext-listing ul li p {
+    display: inline-block;
+    padding-left: 10px;
+    width: calc(100% - 30px);
+}
+
+.ext-listing ul li span img {
+    height: 16px;
+}
+/*==============================
+ 	end About
+ ==============================*/
+
+ /* team */
+ .team .card{
+    position: relative;
+    height: 330px;
+    min-width: 200px;
+    width: 100%;
+    background: var(--cards);
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color);
+    transition: all .5s ease;
+}
+.team-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 10px solid var(--background);
+}
+.team-img img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.line-time{
+    position: absolute;
+    top: 25px;
+    left: -38px;
+    background: var(--btn-gold);
+    height: 35px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEE;
+    border: 4px solid #0b0c10;
+    transform: rotate(315deg);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.square-up{
+    position: absolute;
+    top: -15px;
+    right: -14px;
+    border: 3px solid #9e730b;
+    box-shadow: 4px 4px 13px #b3924257;
+    height: 80px;
+    width: 60px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.square-down{
+    position: absolute;
+    bottom: -15px;
+    left: -14px;
+    border: 3px solid #9e730b;
+    box-shadow: 4px 4px 13px #b3924257;
+    height: 80px;
+    width: 60px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.team .card ul{
+	display: flex;
+    color: var(--p);
+    font-size: 15px;
+    justify-content: space-around;
+}
+.team li{
+    text-align: center;
+    border-radius: 5px;
+}
+/* hover */
+.cover-black{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00000079;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .square-down ,.card:hover .square-up {
+    height: 358px;
+    width: 60px;
+    z-index: -2;
+}
+.card:hover .cover-black {
+    opacity: 1;
+    visibility: inherit;
+}
+
+/*==============================
+	start table
+==============================*/
+tbody, tfoot, th, thead, tr{
+    color: var(--color);
+    border-bottom: 1px solid #a17c2330 !important;
+    text-align: center;
+}
+td{
+    text-align: center;
+    color: var(--p);
+}
+/*==============================
+    End table
+==============================*/
+
+/*==============================
+	Responsive
+==============================*/
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 990px) {
+    /* header */
+    .text-header h1{
+        font-size: 35px;
+    }
+	/* about-us */
+    .content-about{
+        margin-top: 100px;
+    }
+    .d-none-990{
+        display: none;
+    }
+}
+@media (max-width: 740px) {
+}
+@media (max-width: 670px) {
+ 
+}
+@media (max-width: 400px) {
+	h4, h3{
+		font-size: 18px;
+	}
+	a{
+		font-size: 14px;
+	}
+	span{
+		font-size: 14px;
+	}
+}
+
+/*==============================
+	End Responsive
+==============================*/  

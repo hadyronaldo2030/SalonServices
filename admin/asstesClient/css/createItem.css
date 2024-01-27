@@ -1,0 +1,290 @@
+/*----------------------------------------
+Project:	beauty
+
+Devloper:	Hady Rabie - Mohamed Salah
+----------------------------------------*/
+/*----------------------------------------
+[Table of contents]
+
+1. create items
+
+
+/*==============================
+	start create items
+==============================*/
+header{
+    height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 7px 0 0;
+}
+.header{
+    position: relative;
+    max-height: 75vh;
+    width: 100%;
+    overflow-y: hidden;
+    /* background: url('') center/cover fixed no-repeat; */
+}
+
+/* wapper img */
+.cover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cover img{
+    width: 100%;
+    height: 100%;
+  }
+.flex-header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: sticky;
+    justify-content: flex-end;
+
+}
+/* text header */
+.text-header{    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text-header h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 30px 0;
+    font-family: 'Droid Sans';
+
+}
+.gradient-text {
+    background: linear-gradient(
+      270deg,
+      #b89808,
+      #ff9057,
+      #ffc764,
+      #50e3c2,
+      #7d7ba1,
+      #b8e986,
+      #ff4b59
+    );
+    background-size: 200%;
+    font-size: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Define animation */
+@keyframes gradient-shift {
+    0% {background-position: 0%;}
+    100% {background-position: 100%;}
+}
+.text-header p{
+    color: var(--p);
+    max-width: 80%;
+}
+
+/* img header */
+.img-header{   
+    align-items: center;
+    width: 34%;
+    color: var(--color);
+}
+.img-header .boxImg{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-header img{  
+    max-width: 100%; 
+    width: auto;
+    max-height: 80vh;
+    padding: 10px 0;
+    animation-name: float;
+    animation: float 3s ease infinite;
+  }
+  @keyframes float {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-10px);}
+        100% {transform: translateY(0);}
+    }
+
+/* edit Input */
+.editInput{
+    width: 100%;
+    border: transparent;
+    background: transparent;
+    color: #EEE;
+    font-size: 22px;
+    padding-top: 15px;
+    transition: all .5s ease
+}
+.editInput:hover{
+    background: #0000004d;
+
+}
+
+/*==============================
+	end create items
+==============================*/
+
+/*==============================
+	start content
+==============================*/
+
+.main {
+    min-height: 400px;
+  }
+
+.column {
+    border-radius: 5px;
+    padding: 10px 15px 15px;
+    min-width: 260px;
+    display: none;
+    transition: all .5s ease;
+}
+.cover-black{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00000079;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.btn-hover{
+    background: #a099994b;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+.column:hover {
+    transform: scale(1.1);
+}
+.column:hover .cover-black {
+    opacity: 1;
+    visibility: inherit;
+}
+.column img{
+    height: 245px;
+    width: 100%;
+}
+  /* Content */
+  .content {
+    position: relative;
+    background: var(--component);
+    height: 350px !important;
+    padding: 10px 15px;
+  }
+
+  /* The "show" */
+  .showItem {
+    display: block;
+  }
+
+  /* Style the buttons */
+
+
+  .btnItem {
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    background-color: transparent;
+    border: 1px solid #A17C23;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .btnItem:hover {
+    background-color: white ;
+    color: #A17C23 ;
+  }
+
+.btnItem:active {
+    background-color: #A17C23 !important;
+    color: white !important;
+}
+.btnItem.activeItem{
+    background-color: #A17C23;
+    color: white !important;
+}
+  .search {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #A17C23;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 10px;
+    color: #A17C23;
+}
+.search input{
+    display: flex;
+    justify-content: space-between;
+    border: transparent !important;
+}
+.search svg{
+    border-left: 1px solid #A17C23;
+    padding: 5px 0 5px 10px;
+}
+/*==============================
+	start content
+==============================*/
+
+/*==============================
+	Responsive
+==============================*/
+@media (max-width: 1330px) {
+    h4{
+        font-size: 18px;
+    }
+}
+@media (max-width: 990px) {
+    /* header */
+    .text-header h1{
+        font-size: 35px;
+    }
+}
+@media (max-width: 740px) {
+    .box-category{
+        display: flex;
+        flex-direction: column;
+      }
+    .category {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .category button ,.category input{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 670px) {
+ 
+}
+@media (max-width: 400px) {
+	h4, h3{
+		font-size: 18px;
+	}
+	a{
+		font-size: 14px;
+	}
+	span{
+		font-size: 14px;
+	}
+}
+
+/*==============================
+	End Responsive
+==============================*/  createpackge
