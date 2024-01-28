@@ -33,7 +33,10 @@ Devloper:	Hady Rabie - Mohamed Salah
 	padding: 0;
 	box-sizing: border-box;
 }
-
+.btn-danger{
+  background: #F00;
+  color: #fff;
+}
 .text-color{
   color: var(--color) !important;
 }
