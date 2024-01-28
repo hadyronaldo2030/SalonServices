@@ -1,28 +1,15 @@
-//========================= Dark Mode & Light Mode =========================
+//========================= notification =========================
 $(document).ready(function() {
-  let currentTheme = localStorage.getItem('theme');
-  if (currentTheme) {
-    $("html").attr("data-theme", currentTheme);
+  // عند الضغط على زر الإشعارات
+  $('#notification-button').click(function() {
+    $('#notification-modal').toggle(); // إظهار/إخفاء نافذة الإشعارات
+  });
 
-    if (currentTheme === "darkMode") {
-      $(".themeicon.btnLight").addClass("d-none");
-      $(".themeicon.fa-moon").removeClass("d-none");
-    } else if (currentTheme === "lightMode") {
-      $(".themeicon.btnLight").removeClass("d-none");
-      $(".themeicon.fa-moon").addClass("d-none");
-    }
-  }
-
-  $(".themeicons").click(function() {
-    $(".themeicon").toggleClass("d-none");
-
-    let currentTheme = $("html").attr("data-theme");
-    if (currentTheme === "darkMode") {
-      $("html").attr("data-theme", "lightMode");
-      localStorage.setItem('theme', "lightMode");
-    } else if (currentTheme === "lightMode") {
-      $("html").attr("data-theme", "darkMode");
-      localStorage.setItem('theme', "darkMode");
+  // عند النقر في أي مكان على الصفحة
+  $(document).click(function(e) {
+    if (!$(e.target).closest('#notification-button, #notification-modal').length) {
+      // إذا كان النقر خارج زر الإشعارات ونافذة الإشعارات، قم بإخفاء النافذة
+      $('#notification-modal').hide();
     }
   });
 });

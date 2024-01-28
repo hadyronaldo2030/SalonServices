@@ -602,8 +602,12 @@ button{
   transition: all .5s ease;
 }
 .open-close-aside{
-  /* right: 0%; */
-  max-width: 70px;
+  right: 0%;
+  max-width: 280px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all .5s ease;
 }
 .sidebar::after {
   content: "";
@@ -626,7 +630,9 @@ button{
   grid-template-columns: repeat(2, max-content);
   column-gap: .5rem;
 }
-
+aside .logo{
+  font-size:20px;
+}
 .sidebar .logo img {
   width: 100px;
   height: 100px;
@@ -661,7 +667,7 @@ button{
   grid-template-columns: repeat(2, max-content);
   align-items: center;
   column-gap: 1.5rem;
-  padding: 10px;
+  padding: 6px;
   border-radius: .25rem;
   transition: all .5s ease;
 }
