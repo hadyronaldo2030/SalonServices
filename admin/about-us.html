@@ -269,32 +269,33 @@
                 <div class="row w-100 m-0  mb-3 bg-component">
                     <div class="col-lg-4 col-12 box m-0 py-3 px-2">
                         <form class="card-body">
-                            
+
                             <!-- article -->
                             <input id="live-title" class="form-control my-b" type="text" placeholder=" عنوان المقالة " id="example-text-input">
                             <textarea id="live-Description" class="form-control my-2" cols="20" rows="3" placeholder="وصف المقالة"></textarea>
 
                             <!-- img 1 -->
-                            <a href="#packge" class="btn-gold w-100 my-2">
+                            <div class="btn-gold w-100 my-2">
                                 <input type="file" name="" class="d-none" id="imageInput1">
                                 <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
                                 <label for="imageInput1" id="imageInput" class="py-2 m-auto"> الصورة الاولى</label>
-                            </a>
+                            </div>
                             <input id="live-title1" class="form-control my-2" type="text" placeholder=" عنوان المقالة الاولى">
                             <textarea id="live-Description1" class="form-control my-2" cols="20" rows="3" placeholder="وصف المقالة الاولى"></textarea>
-                            
+
                             <!-- img 2 -->
-                            <a href="#packge" class="btn-gold w-100 my-2">
+                            <div class="btn-gold w-100 my-2">
                                 <input type="file" name="" class="d-none" id="imageInput2">
                                 <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
                                 <label for="imageInput2" id="imageInput" class="py-2 m-auto"> الصورة الثانيه</label>
-                            </a>
+                            </div>
                             <input id="live-title2" class="form-control my-2" type="text" placeholder=" عنوان المقالة الثانيه">
                             <textarea id="live-Description2" class="form-control my-2" cols="20" rows="3" placeholder=" وصف المقالة الثانيه"></textarea>
 
                             <button class="btn-gold w-100 my-2">
                                 <span class="py-2 m-auto">تحديث</span>
                             </button>
+
                         </form>
                     </div>
                     <div class="col box m-0 py-3 px-4">
@@ -327,34 +328,36 @@
                 <!-- Advantages -->
                 <div class="row w-100 m-0 my-3 bg-component">
                     <div class="col-lg-3 col-12 p-2">
-                        <div class="card-body h-100">
-                            <a href="#packge" class="btn-gold w-100 my-4">
-                                <input type="file" name="" class="d-none" id="imageInput">
+                        <form class="card-body h-100">
+                            <div class="btn-gold w-100 my-4">
+                                <input type="file" name="" class="d-none" id="imageCover">
                                 <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
-                                <label for="imageInput" id="imageInput" class="py-2 m-auto"> صورة الغلاف</label>
-                            </a>
-                            <input class="form-control my-4" type="text" placeholder=" عنوان الصورة ">
-                            <input class="form-control my-4" type="text" placeholder=" تعريف الصورة ">
-                            <input class="form-control my-4" type="text" placeholder=" تعريف الصورة ">
-                            
+                                <label for="imageCover" id="imageCover" class="py-2 m-auto"> الغلاف </label>
+                            </div>
+
+                            <input id="live-title3" class="form-control my-4" type="text" placeholder=" عنوان الصورة ">
+                            <input id="live-Description3" class="form-control my-4" type="text" placeholder=" تعريف الصورة ">
+                            <input id="live-Description4" class="form-control my-4" type="text" placeholder=" تعريف الصورة ">
+
                             <button class="btn-gold w-100 my-4">
                                 <span class="py-2 m-auto">تحديث</span>
                             </button>
-                        </div>
-                    </div> <!-- end col-->
+                        </form>
+                    </div> 
+                    <!-- end col-->
                     <div class="col p-2">
                         <div class="card-body h-100">
                             <div class="row w-100 m-0">
                                 <div class="col-12">
                                     <div>
-                                        <img id="selectedImage" class="w-100 my-5 card-img-top" src="asstesClient/imag/barber-gallery-2.jpg" alt="">
+                                        <img id="coverImage" class="w-100 my-5 card-img-top" src="asstesClient/imag/barber-gallery-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col mt-4">
-                                    <h3 class="text-color">"في [اسم الموقع]، نقوم بتقديم خدمات المساج بروح منفتحة واحترافية."</h3>
+                                    <h3 id="d-title3" class="text-color">"في [اسم الموقع]، نقوم بتقديم خدمات المساج بروح منفتحة واحترافية."</h3>
                                     <ul class="packge">
-                                        <li class="text-color"><span></span> يجمع فريقنا بين الخبرة والاهتمام بالتفاصيل لضمان تقديم أعلى مستويات الخدمة. نحن  </li>
-                                        <li class="text-color"><span></span> يجمع فريقنا بين الخبرة والاهتمام بالتفاصيل لضمان تقديم أعلى مستويات الخدمة. نحن  </li>
+                                        <li id="d-Description3" class="text-color"><span></span> يجمع فريقنا بين الخبرة والاهتمام بالتفاصيل لضمان تقديم أعلى مستويات الخدمة. نحن  </li>
+                                        <li id="d-Description4" class="text-color"><span></span> يجمع فريقنا بين الخبرة والاهتمام بالتفاصيل لضمان تقديم أعلى مستويات الخدمة. نحن  </li>
                                     </ul>
                                 </div>
                             </div>
@@ -365,43 +368,44 @@
                 <!-- who are we -->
                 <div class="row w-100 m-0 my-3 bg-component">
                     <div class="col-lg-3 col-12 p-0">
-                        <div class="card-body h-100">
-                            <a href="#packge" class="btn-gold w-100 my-4">
-                                <input type="file" name="" class="d-none" id="imageInput">
+                        <form class="card-body h-100">
+                            <div class="btn-gold w-100 my-4">
+                                <input type="file" name="" class="d-none" id="imagePoster">
                                 <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
-                                <label for="imageInput" id="imageInput" class="py-2 m-auto"> صورة الغلاف</label>
-                            </a>
-                            <a href="#packge" class="btn-gold w-100 my-4">
-                                <input type="file" name="" class="d-none" id="imageInput">
+                                <label for="imagePoster" id="imagePoster" class="py-2 m-auto"> صورة الغلاف</label>
+                            </div>
+                            <div class="btn-gold w-100 my-4">
+                                <input type="file" name="" class="d-none" id="videoPoster">
                                 <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
-                                <label for="imageInput" id="imageInput" class="py-2 m-auto"> فيديو تعريفى</label>
-                            </a>
-                            <input class="form-control my-4" type="text" placeholder=" عنوان الصورة ">
-                            <textarea id="live-Description2" class="form-control my-2" cols="20" rows="3" placeholder=" وصف المقالة الثانيه"></textarea>
+                                <label for="videoPoster" id="videoPoster" class="py-2 m-auto"> صورة الفيديو</label>
+                            </div>
+                            <input id="url-link" class="form-control my-4" type="url" placeholder=" رابط فيديو يوتيوب ">
+                            <input id="live-title6" class="form-control my-4" type="text" placeholder=" عنوان الصورة ">
+                            <textarea id="live-Description7" class="form-control my-2" cols="20" rows="3" placeholder=" وصف المقالة الثانيه"></textarea>
 
-                            <input class="form-control my-4" type="text" placeholder=" المميزات 1">
-                            <input class="form-control my-4" type="text" placeholder=" المميزات 2">
-                            <input class="form-control my-4" type="text" placeholder=" المميزات 3">
-                            <input class="form-control my-4" type="text" placeholder=" المميزات 4">
-                            <input class="form-control my-4" type="text" placeholder=" المميزات 5">
+                            <input id="live-bart1" class="form-control my-4" type="text" placeholder=" المميزات 1">
+                            <input id="live-bart2" class="form-control my-4" type="text" placeholder=" المميزات 2">
+                            <input id="live-bart3" class="form-control my-4" type="text" placeholder=" المميزات 3">
+                            <input id="live-bart4" class="form-control my-4" type="text" placeholder=" المميزات 4">
+                            <input id="live-bart5" class="form-control my-4" type="text" placeholder=" المميزات 5">
                             
                             <button class="btn-gold w-100 my-4">
                                 <span class="py-2 m-auto">تحديث</span>
                             </button>
-                        </div>
-                    </div> <!-- end col-->
+                        </form>
+                    </div> 
+                    <!-- end col-->
                     <div class="col p-0">
                         <div class="card-body h-100">
                             <div class="row w-100 m-0">
                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div class="ext-about-img mb-30">
                                         <div class="ext-about-img-inner">
-                                            <img src="asstesClient/imag/barber-portfolio-1.jpg" alt="" class="parallax">
+                                            <img id="viewPoster" src="asstesClient/imag/barber-portfolio-1.jpg" alt="" class="parallax">
                                             <div class="ext-about-img-small">
-                                                <img src="asstesClient/imag/barber-portfolio-55.jpg" alt="" class="parallax">
+                                                <img id="viewPostervideo" src="asstesClient/imag/barber-portfolio-55.jpg" alt="" class="parallax">
                                                 <div class="video-icon">
-                                                    <a class="video-popup" rel="external"
-                                                        href="https://www.youtube.com/embed/S3uOcK_8gdc" title="title">
+                                                    <a id="video-link" class="video-popup" rel="external" href="" title="title" target>
                                                         <i class="fa fa-play"></i>
                                                     </a>
                                                     <div class="btn-wave"></div>
@@ -418,13 +422,13 @@
                                                 <h4 class="mb-3">
                                                     من نحن
                                                 </h4>
-                                                <h2>
+                                                <h2 id="d-title6">
                                                     انظر كيف نعمل وتطبيق الارشادات
                                                 </h2>
                                             </div>
                 
                                         </div>
-                                        <p>
+                                        <p id="d-Description7">
                                             نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص
                                             تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص
                                             تعريفى نص تعريفى نص تعريفى
@@ -433,31 +437,31 @@
                                             <ul>
                                                 <li>
                                                     <span></span>
-                                                    <p>
+                                                    <p id="d-bart1">
                                                         تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <span></span>
-                                                    <p>
+                                                    <p id="d-bart2">
                                                         تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <span></span>
-                                                    <p>
+                                                    <p id="d-bart3">
                                                         تعريفى نص تعريفى نص تعريفى نص تعريفى
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <span></span>
-                                                    <p>
+                                                    <p id="d-bart4">
                                                         تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <span></span>
-                                                    <p>
+                                                    <p id="d-bart5">
                                                         تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى
                                                     </p>
                                                 </li>
@@ -481,13 +485,13 @@
                     <div class="col m-0">
                         <form class="row bg-component">
                             <div class="col-lg-6 card-body">
-                                <a href="#packge" class="btn-gold w-100 my-4">
-                                    <input type="file" name="" class="d-none" id="imageInput">
+                                <div class="btn-gold w-100 my-4">
+                                    <input type="file" name="" class="d-none" id="imgpersonal">
                                     <span class="back"><img src="asstesClient/imag/photo-camera-interface-symbol-for-button.png"></span>
-                                    <label for="imageInput" id="imageInput" class="py-2 m-auto"> صورة شخصية </label>
-                                </a>
-                                <input id="live-namePackge" class="form-control my-4" type="text" placeholder="الاسم">
-                                <input id="live-namePackge" class="form-control my-4" type="text" placeholder="الوظيفة ">
+                                    <label for="imgpersonal" id="imgpersonal" class="py-2 m-auto"> صورة شخصية </label>
+                                </div>
+                                <input id="live-userName" class="form-control my-4" type="text" placeholder="الاسم">
+                                <input id="live-jobTitle" class="form-control my-4" type="text" placeholder="الوظيفة ">
                             </div>
                             <div class="col-lg-6 card-body">
                                 <input id="live-item1" class="form-control mb-3 mt-4" type="text" placeholder="رابط الفيسبوك">
@@ -510,10 +514,10 @@
                                 <span class="square-down"></span>
                                 
                                 <a href="../profile.html" class="team-img">
-                                    <img src="asstesClient/imag/hady.jpg" alt="hady" >
+                                    <img id="viewImg" src="asstesClient/imag/hady.jpg" alt="hady" >
                                 </a>
-                                <h5 class="text-center text-color my-2">هادى ربيع</h5>
-                                <h6 class="text-center text-p">مهندس برمجى </h6>
+                                <h5 id="d-userName" class="text-center text-color my-2">هادى ربيع</h5>
+                                <h6 id="d-jobTitle" class="text-center text-p">مهندس برمجى </h6>
                                 <ul class="mt-3">
                                     <li class="btn-hover"><i class="fa-brands fa-facebook"></i></li>
                                     <li class="btn-hover"><i class="fa-brands fa-twitter"></i> </li>
@@ -636,65 +640,13 @@
                                 </ul>
                             </section>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 p-4">
-                            <section class="card">
-                                <div class="cover-black">
-                                    <div class="d-flex flex-column align-items-end m-3">
-                                        <button class="btn-hover mb-3">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </button>
-                                        <button class="btn-hover mb-3" data-bs-toggle="modal" data-bs-target="#editTeam">
-                                            <i class="fa-solid fa-pen"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <span class="square-up"></span>
-                                <span class="square-down"></span>
-                                
-                                <a href="../profile.html" class="team-img">
-                                    <img src="asstesClient/imag/hady.jpg" alt="hady" >
-                                </a>
-                                <h5 class="text-center text-color my-2">هادى ربيع</h5>
-                                <h6 class="text-center text-p">مهندس برمجى </h6>
-                                <ul class="mt-3">
-                                    <li class="btn-hover"><i class="fa-brands fa-facebook"></i></li>
-                                    <li class="btn-hover"><i class="fa-brands fa-twitter"></i> </li>
-                                    <li class="btn-hover"><i class="fa-brands fa-whatsapp"></i></li>
-                                    <li class="btn-hover"><i class="fa-brands fa-instagram"></i></li>
-                                </ul>
-                            </section>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 p-4">
-                            <section class="card">
-                                <div class="cover-black">
-                                    <div class="d-flex flex-column align-items-end m-3">
-                                        <button class="btn-hover mb-3">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </button>
-                                        <button class="btn-hover mb-3" data-bs-toggle="modal" data-bs-target="#editTeam">
-                                            <i class="fa-solid fa-pen"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <span class="square-up"></span>
-                                <span class="square-down"></span>
-                                
-                                <a href="../profile.html" class="team-img">
-                                    <img src="asstesClient/imag/hady.jpg" alt="hady" >
-                                </a>
-                                <h5 class="text-center text-color my-2">هادى ربيع</h5>
-                                <h6 class="text-center text-p">مهندس برمجى </h6>
-                                <ul class="mt-3">
-                                    <li class="btn-hover"><i class="fa-brands fa-facebook"></i></li>
-                                    <li class="btn-hover"><i class="fa-brands fa-twitter"></i> </li>
-                                    <li class="btn-hover"><i class="fa-brands fa-whatsapp"></i></li>
-                                    <li class="btn-hover"><i class="fa-brands fa-instagram"></i></li>
-                                </ul>
-                            </section>
-                        </div>
                     </div>
+                    
                     <!-- who are we -->
-                    <div class="row w-100 m-0 my-3 bg-component">
+                    <form class="row w-100 m-0 my-3 bg-component">
+                        <div class="col-12 py-3 px-0">
+                            <h4 class="text-color"> ذيل الصفحة </h4>
+                        </div>
                         <div class="col-lg-4 col-12 p-0">
                             <div class="card-body h-100">
                                 
@@ -710,10 +662,10 @@
                         <!-- end col-->
                         <div class="col-lg-4 col-sm-12 col-12">
                             <div class="card-body">
-                                <input id="live-item1" class="form-control mb-3 mt-4" type="text" placeholder="رابط الفيسبوك">
-                                <input id="live-item2" class="form-control my-3" type="text" placeholder="رابط الانستقرام">
-                                <input id="live-item3" class="form-control my-3" type="text" placeholder="رابط التويتر">
-                                <input id="live-item4" class="form-control my-3" type="text" placeholder="رقم الواتساب">
+                                <input id="live-item1" class="form-control mb-4 mt-4" type="text" placeholder="رابط الفيسبوك">
+                                <input id="live-item2" class="form-control my-4" type="text" placeholder="رابط الانستقرام">
+                                <input id="live-item3" class="form-control my-4" type="text" placeholder="رابط التويتر">
+                                <input id="live-item4" class="form-control my-4" type="text" placeholder="رقم الواتساب">
                             </div>
                         </div>
         
@@ -797,7 +749,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
 
                 </div>
             </header>
@@ -900,10 +852,80 @@
             });
         });
         
+        // cover
+        $(document).ready(function(){
+            $('#imageCover').on('change', function(){
+                var input = this;
+                var img = $('#coverImage');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+        
+        // who are we
+        $(document).ready(function(){
+            $('#imagePoster').on('change', function(){
+                var input = this;
+                var img = $('#viewPoster');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+        $(document).ready(function(){
+            $('#videoPoster').on('change', function(){
+                var input = this;
+                var img = $('#viewPostervideo');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
+        
+        // Team
+        $(document).ready(function(){
+            $('#imgpersonal').on('change', function(){
+                var input = this;
+                var img = $('#viewImg');
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            });
+        });
     </script>
     <script>
         // ======================= Live typing text =============================
         $(document).ready(function () {
+            // Company definition
             $("#live-title").on("input", function() {
                 var Value = $(this).val();
                 $("#d-title").text(Value);
@@ -930,7 +952,67 @@
                 var descriptioneValue2 = $(this).val();
                 $("#d-Description2").text(descriptioneValue2);
             });
+
+            // Advantages
+            $("#live-title3").on("input", function() {
+                var Value3 = $(this).val();
+                $("#d-title3").text(Value3);
+            });
+            $("#live-Description3").on("input", function() {
+                var descriptioneValue3 = $(this).val();
+                $("#d-Description3").text(descriptioneValue3);
+            });
+            $("#live-Description4").on("input", function() {
+                var descriptioneValue4 = $(this).val();
+                $("#d-Description4").text(descriptioneValue4);
+            });
+
+            // who are we
+            $("#url-link").on("input", function () {
+                var videoUrl = $(this).val();
+                $("#video-link").attr("href", videoUrl);
+            });
+            $("#live-title6").on("input", function() {
+                var Value6 = $(this).val();
+                $("#d-title6").text(Value6);
+            });
+            $("#live-Description7").on("input", function() {
+                var descriptioneValue7 = $(this).val();
+                $("#d-Description7").text(descriptioneValue7);
+            });
+            
+            $("#live-bart1").on("input", function() {
+                var bart1 = $(this).val();
+                $("#d-bart1").text(bart1);
+            });
+            $("#live-bart2").on("input", function() {
+                var bart2 = $(this).val();
+                $("#d-bart2").text(bart2);
+            });
+            $("#live-bart3").on("input", function() {
+                var bart3 = $(this).val();
+                $("#d-bart3").text(bart3);
+            });
+            $("#live-bart4").on("input", function() {
+                var bart4 = $(this).val();
+                $("#d-bart4").text(bart4);
+            });
+            $("#live-bart5").on("input", function() {
+                var bart5 = $(this).val();
+                $("#d-bart5").text(bart5);
+            });
+
+            // team
+            $("#live-userName").on("input", function() {
+                var userName = $(this).val();
+                $("#d-userName").text(userName);
+            });
+            $("#live-jobTitle").on("input", function() {
+                var jobTitle = $(this).val();
+                $("#d-jobTitle").text(jobTitle);
+            });
         });
+
     </script>
 </body>
 
