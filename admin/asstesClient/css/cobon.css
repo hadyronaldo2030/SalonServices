@@ -115,10 +115,19 @@ tbody, tfoot, th, thead, tr{
     color: var(--color);
     border-bottom: 1px solid #a17c2330 !important;
     text-align: center;
+    text-wrap: nowrap;
 }
 td{
     text-align: center;
     color: var(--p);
+    text-wrap: nowrap;
+}
+table td span{
+    width: 97px;
+    display: block;
+    height: 26px;
+    padding: 3px;
+    margin: auto;
 }
 /*==============================
     End table
