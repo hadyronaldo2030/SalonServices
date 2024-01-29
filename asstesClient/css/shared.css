@@ -161,6 +161,16 @@ ul{
 	min-height:350px;
 	z-index:2000000
 }
+
+/* title page */
+.title-page{
+    display: flex;
+    height: 100%;
+    position: sticky;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* owl carousel */
 .owl-nav, .owl-dots{
   display: flex;

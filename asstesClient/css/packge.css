@@ -17,7 +17,7 @@ header{
     height: 35vh;
     width: 100%;
     margin-top: 70px;
-    background: url('../imag/slide2.jpg') center/cover fixed no-repeat;
+    background: url('../imag/bgfirst.jpg') center/cover fixed no-repeat;
 }
 
 .flex-header{
