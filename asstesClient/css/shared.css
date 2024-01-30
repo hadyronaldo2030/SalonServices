@@ -33,6 +33,10 @@ Devloper:	Hady Rabie - Mohamed Salah
 	padding: 0;
 	box-sizing: border-box;
 }
+.btn-danger{
+  background: #F00;
+  color: #fff;
+}
 .text-color{
   color: var(--color) !important;
 }
@@ -46,44 +50,54 @@ Devloper:	Hady Rabie - Mohamed Salah
   color: #B59548;
 }
 .bg-component{
-  background-image: var(--component);
+  background: var(--cards);
 }
-.btnGray{
-    background: var(--btnGray);
-    color: #eee;
-    padding: 2px 10px;
-    border-radius: 5px;
+.bg-none{
+  background: transparent;
+  border: transparent;
 }
-.btn-outline-gold{
-  color: #B59548;
-  font-weight: 500;
-  border: 1px solid #B59548;
-  border-radius: 7px;
-  width: 145px;
+.btn-hover{
+  background: #a099994b;
+  padding: 5px;
+  width: 35px;
   height: 35px;
-  display: flex;
-  font-size: 18px;
-  transition: all ease .5s;
-  align-items: center;
-  justify-content: center;
 }
-.btn-gold{
-  background-color: #b89808;
-  background-image: var(--btn-gold);
+.column:hover {
+  transform: scale(1.1);
+}
+.btn-delete, .btn-edit, .btn-gold{
   color: #EEE !important;
-  font-weight: 700;
   border: transparent;
   border-radius: 7px;
   width: 155px;
   height: 45px;
-  padding-left: 15px;
+  padding: 0;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   transition: all ease .5s;
   align-items: center;
   justify-content: space-between;
 }
-.btn-gold:hover ,.btn-outline-gold:hover{
+.outline-light{
+  background-color: transparent;
+  color: var(--color);
+  border: 1px solid #eeeeee45;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  max-height: 75px;
+  max-width: 400px;
+}
+.btn-gold{
+  background-image: var(--btn-gold);
+}
+.btn-edit{
+  background-image: linear-gradient(225deg, #b59548 0%, #9a6d00 100%);
+}
+.btn-delete{
+  background-image: linear-gradient(225deg, #b59548 0%, #FF0000 100%);
+}
+.btn-gold:hover, .btn-delete:hover, .btn-edit:hover{
     background: #ffffff;
     color: #1f2937 !important;
 }
@@ -114,6 +128,18 @@ Devloper:	Hady Rabie - Mohamed Salah
     border-radius: 25px;
     padding: 5px 20px;
     font-size: 20px;
+}
+
+select{
+  background: #2F2F2F;
+  border: none;
+  color: var(--color);
+  padding: 4px 15px !important;
+  border-radius: 2px;
+  font-size: 14px;
+}
+option{
+  padding-left: 5px;
 }
 *:disabled ,button{
     background-color: dimgrey;
@@ -170,6 +196,15 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.title-page h1::after, .title-page h1::before{
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: var(--color2);
+  border-radius: 50px;
+  margin: auto 15px;
+  display: inline-block;
 }
 /* owl carousel */
 .owl-nav, .owl-dots{
@@ -288,6 +323,18 @@ canvas{display: block;}
   height: 15px;
   margin: 0 30px ;
   border-radius: 50px;
+}
+.input-group {
+  background-color: transparent !important;
+  border: 1px solid #b18f3d !important;
+  border-radius: 5px !important;
+  color: var(--p) !important;
+}
+.form-select option {
+background-color: var(--cards) !important;
+border: 1px solid #b18f3d !important;
+border-radius: 5px !important;
+color: var(--p);
 }
 /*==============================
 Navbar

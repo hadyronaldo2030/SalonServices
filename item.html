@@ -18,9 +18,6 @@
     <!--  font Awesome -->
     <link href="asstesClient/fonts/all.min.css" rel="stylesheet">
     
-    <!-- Calendar Css-->
-    <link href="asstesClient/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="asstesClient/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!--  Style css -->
     <link href="asstesClient/css/shared.css" rel="stylesheet">
     <link href="asstesClient/css/packge.css" rel="stylesheet">
@@ -262,9 +259,9 @@
             <div class="cover-black"></div>
         </div>
         <div class="title-page">
-            <h1 class="text-color">الباقة</h1>
+            <h1 class="text-color">المنتج</h1>
             <div class="d-flex text-p">
-                <a href="#">الباقة</a>
+                <a href="#">المنتج</a>
                 <span class="px-2"> / </span>
                 <a href="index.html">الرئيسية</a>
             </div>
@@ -272,55 +269,63 @@
     </header>
     <!-- end -->
 
-    <!--=============== NEWS ===============-->
-    <section class="add-new">
+    <!--=============== item ===============-->
+    <section>
 
         <div class="container">
-            <div class="row" id='wrap'>
-                <div class="col-lg-3 packge my-3" id='external-events'>
-                    <div style="padding: 15px;">
-                        <section class="card">
-                            <span class="square-up"></span>
-                            <span class="square-down"></span>
-                            <div class="line-time">
-                                4 ساعات
-                            </div>
-                            <div>
-                                <h4>اساسية</h4>
-                                <h1>2000$</h1>
-                                <ul>
-
-                                    <li><span></span> جلسات تخسيس</li>
-                                    <li><span></span> علاج بالاعشاب</li>
-                                    <li><span></span> زيوت طبيعية</li>
-                                    <li><span></span> احجار سوداء</li>
-                                    <li><span></span> اعشاب طبيعية</li>
-                                    <li><span></span> جلسات تخسيس</li>
-                                    <li><span></span> علاج بالاعشاب</li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                    
+            <div class="row w-100 m-0 mt-4">
+                <div class="col-lg-4 col-12 bg-component p-3 ml-3">
+                    <img class="w-100 my-5"
+                        src="asstesClient/imag/products/item (10).png" alt="">
                 </div>
-                <div class="col my-3 mr-3" id='calendar-wrap'>
-                    <div class="card-calendar">
-                        <div id='calendar'></div>
+                <div class="col bg-component p-3">
+                    <h3  class="text-color">ماء الورد</h3>
+                    <div class="d-flex justify-content-between w-100 my-3">
+                        <div class="d-flex">
+                            <h4 class="text-warning">199$</h4>
+                            <h4  class="text-secondary mx-3 text-decoration-line-through">
+                                199$</h4>
+                        </div>
+                        <h4 id="d-Discount" class="text-info">(60%)</h4>
                     </div>
-                    <div class="d-flex my-3">
-                        <form class="input-group flex flex-row-reverse">
-                            <input type="text" class="form-control bg-none" placeholder="ادخل كود الخصم" aria-label="Username" aria-describedby="basic-addon1">
-                            <span class="input-group-text bg-none" id="basic-addon1">
-                                <img class="w-75" src="./asstesClient/imag/check-white.svg" alt="">
-                            </span>
-                        </form>
+                    <hr class="bg-light">
+                    <div>
+                        <p id="d-Description" class="text-color" style="line-height: 2;">
+                            نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص
+                            تعريفى نص تعريفى نص تعريفى نص تعريفى
+                            نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص نص تعريفى نص تعريفى نص
+                            نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص تعريفى نص
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column-sm my-3">
+                        <div class="d-flex my-3">
+                            <!-- cobone -->
+                            <form class="input-group flex flex-row-reverse" style="max-width: 340px;">
+                                <input type="text" class="form-control bg-none" placeholder="ادخل كود الخصم" aria-label="Username" aria-describedby="basic-addon1">
+                                <span class="input-group-text bg-none" id="basic-addon1">
+                                    <img class="w-75" src="./asstesClient/imag/check-white.svg" alt="">
+                                </span>
+                            </form>
+                            <!-- wish-list -->
+                            <span class="mx-2"></span>
+                            <button id="btn-heart" class="outline-light">
+                                <span class="fa-solid fa-heart text-p"></span>
+                            </button>
+                        </div>
+                        <!--  item number -->
                         <span class="mx-2"></span>
-                        <button id="btn-heart" class="outline-light">
-                            <span class="fa-solid fa-heart text-p"></span>
-                        </button>
+                        <div class="ext-product-qauntity my-3">
+                            <span class="quantity-minus quantity-icon"> - </span>
+                            <input type="number" class="quantity" value="1" id="quantityInput">
+                            <span class="quantity-plus quantity-icon"> + </span>
+                        </div>
                     </div>
+                    <!-- pay now -->
+                    <button class="btn-gold w-100 my-4" style="max-width: 257px;">
+                        <span class="back"><img src="asstesClient/imag/caret.svg"></span>
+                        <span class="py-2 m-auto">شراء الان</span>
+                    </button>
                 </div>
-            
             </div>
         </div>
     </section>
@@ -330,7 +335,7 @@
         <button id="btn-heart" class="outline-light d-flex align-items-center w-100">
             <img style="height: 40px;" src="asstesClient/imag/info.png" alt="">
             <span class="mx-2"></span>
-            يرجى الحضور قبل الموعد ب 15 دقيقة
+            سيتم التوصيل خلال ثلاث ايام
         </button>
     </div>
 
@@ -475,110 +480,12 @@
 
     <!--  font awesome -->
     <script src="asstesClient/fonts/all.min.js"></script>
-    <!-- plugin js -->
-    <script src="asstesClient/js/index.global.js"></script>
-    <script src="asstesClient/js/app.js"></script>
-    
+
     <!-- Js Index Java Script -->
     <script src="asstesClient/js/shared.js"></script>
 
     <script>
-        // calendar
-        document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-      
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            headerToolbar: {
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            },
-            // initialDate: '2023-01-12',
-            navLinks: true, // can click day/week names to navigate views
-            selectable: true,
-            selectMirror: true,
-            select: function(arg) {
-              var title = prompt('ضع علامة للحجز:');
-              if (title) {
-                calendar.addEvent({
-                  title: title,
-                  start: arg.start,
-                  end: arg.end,
-                  allDay: arg.allDay
-                })
-              }
-              calendar.unselect()
-            },
-            eventClick: function(arg) {
-              if (confirm('هل تريد الغاء الحجز?')) {
-                arg.event.remove()
-              }
-            },
-            editable: true,
-            dayMaxEvents: true, // allow "more" link when too many events
-            events: [
-            //   {
-            //     title: 'All Day Event',
-            //     start: '2023-01-01'
-            //   },
-            //   {
-            //     title: 'Long Event',
-            //     start: '2023-01-07',
-            //     end: '2023-01-10'
-            //   },
-            //   {
-            //     groupId: 999,
-            //     title: 'Repeating Event',
-            //     start: '2023-01-09T16:00:00'
-            //   },
-            //   {
-            //     groupId: 999,
-            //     title: 'Repeating Event',
-            //     start: '2023-01-16T16:00:00'
-            //   },
-            //   {
-            //     title: 'Conference',
-            //     start: '2023-01-11',
-            //     end: '2023-01-13'
-            //   },
-            //   {
-            //     title: 'Meeting',
-            //     start: '2023-01-12T10:30:00',
-            //     end: '2023-01-12T12:30:00'
-            //   },
-            //   {
-            //     title: 'Lunch',
-            //     start: '2023-01-12T12:00:00'
-            //   },
-            //   {
-            //     title: 'Meeting',
-            //     start: '2023-01-12T14:30:00'
-            //   },
-            //   {
-            //     title: 'Happy Hour',
-            //     start: '2023-01-12T17:30:00'
-            //   },
-            //   {
-            //     title: 'Dinner',
-            //     start: '2023-01-12T20:00:00'
-            //   },
-            //   {
-            //     title: 'Birthday Party',
-            //     start: '2023-01-13T07:00:00'
-            //   },
-            //   {
-            //     title: 'Click for Google',
-            //     url: 'http://google.com/',
-            //     start: '2023-01-28'
-            //   }
-            ]
-          });
-      
-          calendar.render();
-        });
-      
-    </script>
-    <script>
+    // add to wish list
     $(document).ready(function() {
         $("#btn-heart").click(function () {
             $(".fa-heart").toggleClass("text-danger");
@@ -586,6 +493,27 @@
         });
     });
     </script>
+    <script>
+        // item number
+        $(document).ready(function(){
+          $(".quantity-minus").click(function(){
+            var quantityInput = $("#quantityInput");
+            var currentQuantity = parseInt(quantityInput.val(), 10);
+            
+            if (currentQuantity > 1) {
+              quantityInput.val(currentQuantity - 1);
+            }
+          });
+      
+          $(".quantity-plus").click(function(){
+            var quantityInput = $("#quantityInput");
+            var currentQuantity = parseInt(quantityInput.val(), 10);
+            
+            quantityInput.val(currentQuantity + 1);
+          });
+        });
+    </script>
+    
 </body>
 
 </html>
