@@ -41,7 +41,7 @@ header{
     display: none;
     transition: all .5s ease;
 }
-.cover-black{
+.main .cover-black{
     position: absolute;
     top: 0;
     right: 0;
@@ -86,8 +86,6 @@ header{
   }
 
   /* Style the buttons */
-
-
   .btnItem {
     border: none;
     outline: none;

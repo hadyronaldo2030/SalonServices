@@ -37,6 +37,10 @@ Devloper:	Hady Rabie - Mohamed Salah
   background: #F00;
   color: #fff;
 }
+.btn-success{
+  color: #ffffff !important;
+  background-color: #008800;
+}
 .text-color{
   color: var(--color) !important;
 }
@@ -211,6 +215,7 @@ ul{
   display: flex;
   justify-content: center;
   font-size: 30px;
+  margin: 20px auto;
 }
 .owl-dots button{
     margin: 20px 3px;
@@ -324,7 +329,7 @@ canvas{display: block;}
   margin: 0 30px ;
   border-radius: 50px;
 }
-.input-group {
+.input-group, .form-control {
   background-color: transparent !important;
   border: 1px solid #b18f3d !important;
   border-radius: 5px !important;

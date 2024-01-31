@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    
+    <link rel="stylesheet" href="asstesClient/css/owl.carousel.css">
     <!-- fonts -->
     <link rel="stylesheet" href="asstesClient/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf">
     <link rel="stylesheet" href="asstesClient/fonts/centric-space-centric-space-svg-400.otf">
@@ -271,7 +272,6 @@
 
     <!--=============== item ===============-->
     <section>
-
         <div class="container">
             <div class="row w-100 m-0">
                 <div class="col box px-0">
@@ -461,8 +461,8 @@
             <h3> الباقات</h3>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg my-4 mx-auto">
+            <div class="owl-carousel owl-carousel">
+                <div class="packge-item">
                     <div style="padding: 15px;">
                         <section class="card">
                             <span class="square-up"></span>
@@ -490,7 +490,7 @@
                         </section>
                     </div>
                 </div>
-                <div class="col-lg my-4 mx-auto">
+                <div class="packge-item">
                     <div style="padding: 15px;">
                         <section class="card">
                             <span class="square-up"></span>
@@ -518,7 +518,7 @@
                         </section>
                     </div>
                 </div>
-                <div class="col-lg my-4 mx-auto">
+                <div class="packge-item">
                     <div style="padding: 15px;">
                         <section class="card">
                             <span class="square-up"></span>
@@ -546,11 +546,61 @@
                         </section>
                     </div>
                 </div>
+                <div class="packge-item">
+                    <div style="padding: 15px;">
+                        <section class="card">
+                            <span class="square-up"></span>
+                            <span class="square-down"></span>
+                            <div class="line-time">
+                                4 ساعات
+                            </div>
+                            <div>
+                                <h4>اساسية</h4>
+                                <h1>2000$</h1>
+                                <ul>
 
-                <div class="d-flex justify-content-center">
-                    <a href="#payment" class="btn-outline-gold">
-                        عرض المزيد ..
-                    </a>
+                                    <li><span></span> جلسات تخسيس</li>
+                                    <li><span></span> علاج بالاعشاب</li>
+                                    <li><span></span> زيوت طبيعية</li>
+                                    <li><span></span> احجار سوداء</li>
+                                    <li><span></span> اعشاب طبيعية</li>
+                                    <li><span></span> جلسات تخسيس</li>
+                                    <li><span></span> علاج بالاعشاب</li>
+                                </ul>
+                            </div>
+                            <a href="packge.html" class="btn-gold w-100 justify-content-center">
+                                احجز الان
+                            </a>
+                        </section>
+                    </div>
+                </div>
+                <div class="packge-item">
+                    <div style="padding: 15px;">
+                        <section class="card">
+                            <span class="square-up"></span>
+                            <span class="square-down"></span>
+                            <div class="line-time">
+                                4 ساعات
+                            </div>
+                            <div>
+                                <h4>اساسية</h4>
+                                <h1>2000$</h1>
+                                <ul>
+
+                                    <li><span></span> جلسات تخسيس</li>
+                                    <li><span></span> علاج بالاعشاب</li>
+                                    <li><span></span> زيوت طبيعية</li>
+                                    <li><span></span> احجار سوداء</li>
+                                    <li><span></span> اعشاب طبيعية</li>
+                                    <li><span></span> جلسات تخسيس</li>
+                                    <li><span></span> علاج بالاعشاب</li>
+                                </ul>
+                            </div>
+                            <a href="packge.html" class="btn-gold w-100 justify-content-center">
+                                احجز الان
+                            </a>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -699,6 +749,7 @@
     <!--  font awesome -->
     <script src="asstesClient/fonts/all.min.js"></script>
 
+    <script src="asstesClient/js/owl.carousel.min.js"></script>
     <!-- Js Index Java Script -->
     <script src="asstesClient/js/shared.js"></script>
 
@@ -722,7 +773,6 @@
             } else {
                 $(".column").removeClass("showItem").filter("." + filter).addClass("showItem");
             }
-
             $(this).addClass("activeItem").siblings().removeClass("activeItem");
         });
     });
@@ -740,6 +790,43 @@
                 }
             });
         });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                rtl:true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 8000,
+                autoplayHoverPause: true,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                animateOutDelay: 1000,
+                animateInDelay: 1500,
+                responsive:{
+                300:{
+                    items:1,
+                    nav:true
+                },600:{
+                    items:2,
+                    nav:false
+                },
+                990:{
+                    items:3,
+                    nav:false
+                },
+                1200:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            }
+            });
+        });  
+         
     </script>
 </body>
 
