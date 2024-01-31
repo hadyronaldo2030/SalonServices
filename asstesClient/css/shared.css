@@ -94,6 +94,7 @@ Devloper:	Hady Rabie - Mohamed Salah
 }
 .btn-gold{
   background-image: var(--btn-gold);
+  padding-left: 15px;
 }
 .btn-edit{
   background-image: linear-gradient(225deg, #b59548 0%, #9a6d00 100%);
@@ -329,9 +330,14 @@ canvas{display: block;}
   margin: 0 30px ;
   border-radius: 50px;
 }
-.input-group, .form-control {
+.input-group {
   background-color: transparent !important;
   border: 1px solid #b18f3d !important;
+  border-radius: 5px !important;
+  color: var(--p) !important;
+}
+.form-control {
+  background-color: transparent !important;
   border-radius: 5px !important;
   color: var(--p) !important;
 }
