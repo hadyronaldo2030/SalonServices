@@ -13,11 +13,11 @@ Devloper:	Hady Rabie - Mohamed Salah
 	start create home
 ==============================*/
 header{
-    height: 90vh;
+    position: relative;
+    height: 35vh;
     width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0 15px 0 9px;
+    margin-top: 70px;
+    background: url('../imag/bgfirst.jpg') center/cover fixed no-repeat;
 }
 .card-img-top{
 	max-height: 300px;
@@ -35,9 +35,28 @@ header{
 	end create home
 ==============================*/
 
+
+
+/*==============================
+ 	Start Advantages
+ ==============================*/
+ .advantages{
+    background: #1E1F23;
+}
+
+/*==============================
+ 	End Advantages
+==============================*/
+
 /*==============================
  	Start About
  ==============================*/
+.card-img{
+    width: 100%;
+    max-height: 290px;
+    object-fit: cover;
+}
+
  .ext-about-wrapper{
     margin: 100px 0;
 }
@@ -188,11 +207,42 @@ header{
  	end About
  ==============================*/
 
- /* team */
+ /*==============================
+ 	Start testimonial
+ ==============================*/
+.testimonial{
+    padding: 20px 0;
+    margin: 50px auto;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(90deg, #404042 10%, #0a0a0d 50%, #404042 90%);
+}
+.box-testimonial{
+    background: #b4b4b438;
+    box-shadow: 2px 3px 13px #00000040;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 230px;
+    flex-direction: column;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+}
+ /*==============================
+ 	end testimonial
+ ==============================*/
+
+
+ /*==============================
+ 	Start team
+ ==============================*/
  .team .card{
     position: relative;
     height: 330px;
-    min-width: 200px;
+    min-width: 250px;
     width: 100%;
     background: var(--cards);
     border-radius: 7px;
@@ -264,18 +314,6 @@ header{
     border-radius: 5px;
 }
 /* hover */
-.cover-black{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #00000079;
-    width: 100%;
-    height: 100%;
-    transition: all .5s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
 .card:hover .square-down ,.card:hover .square-up {
     height: 358px;
     width: 60px;
@@ -285,6 +323,9 @@ header{
     opacity: 1;
     visibility: inherit;
 }
+ /*==============================
+ 	end team
+ ==============================*/
 
 /*==============================
 	start table
@@ -330,7 +371,7 @@ td{
 	h4, h3{
 		font-size: 18px;
 	}
-	a{
+	a,li{
 		font-size: 14px;
 	}
 	span{
