@@ -377,7 +377,7 @@ nav {
   line-height:inherit;
 }
 .logo img{
-    width: 135px;
+    width: 135px !important;
     max-width: none;
     min-width: auto;
 }

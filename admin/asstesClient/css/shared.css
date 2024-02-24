@@ -305,13 +305,14 @@ nav {
     display: flex;
 }
 /*...... logo .......*/
-.logo{
+nav .logo{
 	width: auto;
 	font-size: 30px;
 	font-weight: bolder;
 	color: var(--color)!important;
+  line-height:inherit;
 }
-.logo img{
+nav .logo img{
     width: 135px;
     max-width: none;
     min-width: auto;
@@ -652,7 +653,7 @@ aside{
   column-gap: .5rem;
 }
 
- .logo img {
+.sidebar .logo img {
   width: 100px;
   height: 100px;
   object-fit: cover;
