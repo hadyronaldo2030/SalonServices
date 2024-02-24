@@ -407,6 +407,14 @@ header video{
     }
 }
 @media (max-width: 740px) {
+    header video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 80vh;
+        z-index: -1;
+    }
 }
 @media (max-width: 670px) {
  
