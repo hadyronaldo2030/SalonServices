@@ -18,7 +18,7 @@ header{
     width: 100%;
     margin-top: 70px;
     overflow: hidden;
-    /* background: url('../imag/slide2.jpg') center/cover fixed no-repeat; */
+    background: url('../imag/header.jpg') center/cover fixed no-repeat;
 }
 header video{
     position: absolute;
